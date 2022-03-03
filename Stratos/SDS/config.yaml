@@ -1,0 +1,41 @@
+version: 5
+versionshow: v0.5.0
+downloadpathminlen: 88
+Port: "18081"
+NetworkAddress: 127.0.0.1
+Debug: false
+PPListDir: /root/sds/rsnode/peers
+AccountDir: /root/sds/rsnode/accounts
+StorehousePath: /root/sds/rsnode/storage
+DownloadPath: /root/sds/rsnode/download
+P2PAddress: stsdsaddress
+P2PPassword: "12345678"
+WalletAddress: staddress
+WalletPassword: "12345678"
+AutoRun: true
+Internal: false
+IsWallet: true
+IsLimitDownloadSpeed: false
+LimitDownloadSpeed: 0
+IsLimitUploadSpeed: false
+LimitUploadSpeed: 0
+ChainId: tropos-2
+Token: ustos
+StratosChainUrl: https://rest-tropos.thestratos.org:443
+StreamingCache: false
+RestPort: ""
+InternalPort: ""
+TrafficLogInterval: 10
+SPList:
+- P2PAddress: stsdsp2p1ftcvm2h9rjtzlwauxmr67hd5r4hpxqucurea6a
+  P2PPublicKey: stsdsp2p1zcjduepqq9rk5zwkzfnnszt5tqg524meeqd9zts0jrjtqk2ly2swm5phlc2qmgdkva
+  NetworkAddress: 52.69.100.177:8888
+- P2PAddress: stsdsp2p12uufhp4wunhy2n8y5p07xsvy9htnp6zjdtchyf
+  P2PPublicKey: stsdsp2p1zcjduepqkst98p2642fv8eh8297ppx7xuzu7qjz67s9hjjhxjxs834md7e0sygw0hy
+  NetworkAddress: 3.8.63.42:8888
+- P2PAddress: stsdsp2p1nds6cwl67pp7w4sa5ng5c4a5af9hsjkn0xn875
+  P2PPublicKey: stsdsp2p1zcjduepq6mz8w7dygzrsarhh76tnpz0hkqdq44u7usvtnt2qd9qgp8hs8wss033889
+  NetworkAddress: 44.230.101.227:8888
+- P2PAddress: stsdsp2p1hv3qmnujlrug00frk86zxr0q23rnqcaqjfdk2d
+  P2PPublicKey: stsdsp2p1zcjduepqj69eeq07yfdgu4cdlupvga897zjqjakuru0qar5na7as4kjr7jgslatrh7
+  NetworkAddress: 13.58.35.167:8888
