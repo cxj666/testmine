@@ -57,7 +57,7 @@ sudo tee <<EOF >/dev/null /etc/systemd/system/farmer.service
   After=network-online.target
 [Service]
   User=root
-  ExecStart=/home/ubuntu/subspace-farmer farm --reward-address st88XmU8u2KsLHqQykTnANGtytyiVQeyWjnng7y19CnktbPmT
+  ExecStart=/home/ubuntu/subspace-farmer farm --reward-address st7ohCXrrEDNJXdGqUyyipsVC55Gs1WLteQNbsy6mXtASW6Ws
   Restart=on-failure
   RestartSec=10
   LimitNOFILE=65535
