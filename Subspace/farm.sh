@@ -37,7 +37,7 @@ sudo tee <<EOF >/dev/null /etc/systemd/system/subnode.service
   --validator \
   --telemetry-url "wss://telemetry.polkadot.io/submit/ 1" \
   --telemetry-url "wss://telemetry.subspace.network/submit/ 1" \
-  --name BuilderNode$(($RANDOM%50))
+  --name $(($RANDOM%1000))
   Restart=on-failure
   RestartSec=10
   LimitNOFILE=65535
@@ -57,7 +57,7 @@ sudo tee <<EOF >/dev/null /etc/systemd/system/farmer.service
   After=network-online.target
 [Service]
   User=root
-  ExecStart=/home/ubuntu/subspace-farmer farm --reward-address st7ohCXrrEDNJXdGqUyyipsVC55Gs1WLteQNbsy6mXtASW6Ws
+  ExecStart=/home/ubuntu/subspace-farmer farm --reward-address st9XWcQiURQV38tMwA55wWEAQWmjK8C3ri2gMbBVrJMkf7gWG
   Restart=on-failure
   RestartSec=10
   LimitNOFILE=65535
